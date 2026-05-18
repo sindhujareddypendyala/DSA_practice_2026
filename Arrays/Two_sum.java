@@ -1,13 +1,4 @@
-package Arrays;
-/*
-Problem: Two Sum
-Platform: LeetCode
-Difficulty: Easy
-Approach: Brute Force
-Time Complexity: O(n^2)
-Space Complexity: O(1)
-*/
-class Solution {
+class Two_sum {
     public int[] twoSum(int[] nums, int target) {
       for(int i=0; i<=nums.length; i++){
         for(int j=i+1; j<nums.length; j++ ){
