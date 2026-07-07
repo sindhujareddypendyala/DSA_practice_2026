@@ -1,0 +1,25 @@
+class Reverse_Integer {
+    public int reverse(int x) {
+       int num=0;
+       int rev=0;
+
+       boolean isNegative = x<0;
+       x = Math.abs(x); 
+       while(x > 0)
+       {
+        num = x%10;
+        if(rev > (Integer.MAX_VALUE - num) /10)
+        {
+            return 0;
+        }
+        rev = rev * 10 + num;
+        x = x/10;
+       } 
+       if(isNegative)
+       {
+        rev = -rev;
+       }
+
+       return rev;
+    }
+}
